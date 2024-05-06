@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:aqua;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ff6b6b;
+    font-size: 36px;
+  }
+  
+  .heart {
+    width: 80px;
+    height: 80px;
+    background-image: url('heart.svg');
+    background-size: cover;
+    margin: 20px auto;
+    animation: heartbeat 1.5s infinite alternate;
+  }
+  
+  input[type="text"], button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(15px 8px 20px black);
+    box-shadow:  aqua;
+    
+  }
+  
+  button {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff3f3f;
+  }
+  
+  #birthdayWish {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Media queries for responsive design */
+  @media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 60px;
+    }
+  
+    .heart {
+      width: 60px;
+      height: 60px;
+    }
+  
+    input[type="text"], button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    #birthdayWish {
+      font-size: 14px;
+    }
+  }
+  
